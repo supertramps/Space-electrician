@@ -4,24 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="game.js"></script>
-    <title>Document</title>
+    <title>A text adventure</title>
   </head>
   <body>
-    <div id="container">
-      <div class="flex center">
+    <!-- Intro text -->
+      <div id="intro" class="text-box hidden">
+        <p>
+          You wake up in what seems like a storage room. You hear a faint
+          buzzing from some sort of machine and you feel that you're definatily
+          moving.<br />You look around and the only thing you see is a door and
+          a locker.
+        </p>
+        <p>Do you inspect the locker or exit the room?</p>
+      </div>
+
+      <!-- User choose inspect -->
+      <div id="inspect" class="text-box hidden">
+        <p>
+          You walk up to the the locker and to your surprise it's open. You can't
+          really comprehend what you're looking at but it looks like an
+          assortment of weird hats and trash. There's one that caught your eye,
+          it's a party hat. Much like the one you had on your 5th birthday.
+        </p>
+        <p>Do you equip the hat before you leave the room?</p>
+      </div>
+
+      <!-- User exit room -->
+      <div id="exit-room" class="text-box hidden">
+        <p>
+          When you exit the door you find yourself in a long corridor. You're now certain that you're on a spaceship. After 2 years in the field as an space electrician you should know. Your vision is not the greatest, it seems like the lights are out and the ship is running on backup power. On the wall you see a sign that shows your whereabouts. Left for cafeteria and right for electrical.
+        </p>
+        <p>Do you go left or right?</p>
+      </div>
+
+      <!-- User choose left -->
+      <div id="left" class="text-box hidden">
+        <p>
+          You take a left in the corridor and head for the cafeteria. Your stomach is aching, who knows how long you've been out. When you're just a few steps away from the cafeteria the doors slams violently. They can not be opened by force, and also let's face it, your second name never was muscle. You figure something must be done and you see it as your task to fix the wiring so you can get some food.
+        </p>
+        <p>Go back.</p>
+      </div>
+
+      <!-- User choose right -->
+      <div id="right" class="text-box hidden">
+        <p>
+          You head for the electric room down the hall. The hallway is empty and you could hear a needle drop. Suddenly when you pass the medical ward you hear a rustle above you in the ventilation system, it freaks you out for a bit but you figure it's just a rat. <br> <br>
+          When you finally find the room you've been looking for you see that someone have been tampering with the wires to the system. They have been cut off. You try to reconnect the cables and as soon as you're about to connect the blue cable you notice that the ventilation shaft next to you bursts open and this... creature... emerges. The last thing you feel is the tounge of the monster impaling you.
+        </p>
+        <p>You are dead. Type restart to try again.</p>
+      </div>
+
+
+      <div>
         <div class="text-box">
-          <span>></span>
           <p id="story-text"></p>
           <input
+            id="text-input"
             type="text"
             class="input-field"
-            placeholder="What do you do?"
-            onsubmit="GetText()"
+            placeholder="Type here..."
           />
-          <button id="submit-text" onclick="GetText()">Enter</button>
+          <button onclick="FUNCTION HERE">Enter</button>
         </div>
       </div>
-    </div>
+    </divclass=>
+    <script src="game.js"></script>
   </body>
 </html>
