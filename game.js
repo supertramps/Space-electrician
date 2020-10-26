@@ -1,8 +1,25 @@
+/**
+ * @function This function clears the input field when called.
+ * @return null
+ */
 function clearField() {
   document.getElementById("answer").value = "";
 }
-
+/**
+ * @function This function clears the error message when called.
+ * @return null
+ */
+function clearError() {
+  document.getElementById("error").innerHTML = "";
+}
+/**
+ * @function This function reads user input and presents outcome.
+ */
 function getAnswer() {
+  if (document.getElementById("error").innerHTML.startsWith("You tried")) {
+    clearError();
+  }
+
   var input = document.getElementById("answer").value;
 
   if (input === "start") {
@@ -52,6 +69,6 @@ function getAnswer() {
     document.getElementById("intro").classList.toggle("hidden");
   } else {
     document.getElementById("error").innerHTML =
-      "You tried but nothing happened.";
+      "You tried  " + input + "  but nothing happened.";
   }
 }
