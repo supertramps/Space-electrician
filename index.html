@@ -123,14 +123,21 @@
         <p>You are dead. Type restart to try again.</p>
       </div>
 
+      <!-- Text input and submit button -->
       <div>
         <div class="text-box">
+        <form onsubmit="getAnswer(), clearField()" method="dialog" id="submit-form">
           <input
             id="answer"
             type="text"
             class="input-field"
             placeholder="Type here..."
+            autocomplete="off"
+            
+            
           />
+        </form>
+        <br>
           <button onclick="getAnswer()">Enter</button>
           <p id="error"></p>
         </div>

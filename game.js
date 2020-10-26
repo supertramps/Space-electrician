@@ -1,3 +1,7 @@
+function clearField() {
+  document.getElementById("answer").value = "";
+}
+
 function getAnswer() {
   var input = document.getElementById("answer").value;
 
