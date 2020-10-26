@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>A text adventure</title>
+    <script src="game.js"></script>
   </head>
   <body>
-    <!-- Intro text -->
-      <div id="game-start" class="text-box">
+    
+    <!-- Game intro -->
+    <div id="intro" class="text-box">
+      <p>
+        Welcome. You play as an electrician working on spaceships in the future. Type start to begin your journey.
+      </p>
+    </div>
+    
+    <!-- Game start -->
+      <div id="game-start" class="text-box hidden">
         <p>
           You wake up in what seems like a storage room. You hear a faint
           buzzing from some sort of machine and you feel that you're definatily
@@ -29,12 +38,36 @@
         <p>Do you put on the hat before you leave the room?</p>
       </div>
 
+      <!-- User puts on hat -->
+      <div id="use-hat" class="text-box hidden">
+        <p>
+          You put the party hat on your head and for a brief moment it takes you back to your childhood. You wonder what happened with all that joy and wanderlust you had. After a minute you snap back into real life again and you understand that you have to leave this room.
+        </p>
+        <p>Type leave to exit the room.</p>
+      </div>
+
       <!-- User exit room -->
       <div id="exit-room" class="text-box hidden">
         <p>
           When you exit the door you find yourself in a long corridor. You're now certain that you're on a spaceship. After 2 years in the field as an space electrician you should know. Your vision is not the greatest, it seems like the lights are out and the ship is running on backup power. On the wall you see a sign that shows your whereabouts. Left for cafeteria and right for electrical.
         </p>
         <p>Do you go left or right?</p>
+      </div>
+      
+      <!-- User leaves the room with hat-->
+      <div id="leave-room-hat" class="text-box hidden">
+        <p>
+          When you exit the door you find yourself in a long corridor. You're now certain that you're on a spaceship. After 2 years in the field as an space electrician you should know. Your vision is not the greatest, it seems like the lights are out and the ship is running on backup power. On the wall you see a sign that shows your whereabouts. Head east for cafeteria or west for electrical.
+        </p>
+        <p>Do you go east or west?</p>
+      </div>
+      
+      <!-- User leaves the room without hat-->
+      <div id="leave-room-no-hat" class="text-box hidden">
+        <p>
+          When you exit the door you find yourself in a long corridor. You're now certain that you're on a spaceship. After 2 years in the field as an space electrician you should know. Your vision is not the greatest, it seems like the lights are out and the ship is running on backup power. On the wall you see a sign that shows your whereabouts. Left for cafeteria and right for electrical.
+        </p>
+        <p>Do you go to the cafeteria or electrical?</p>
       </div>
 
       <!-- User choose left -->
@@ -57,7 +90,6 @@
 
       <div>
         <div class="text-box">
-          <p id="story-text"></p>
           <input
             id="answer"
             type="text"
@@ -69,6 +101,5 @@
         </div>
       </div>
     </divclass=>
-    <script src="game.js"></script>
   </body>
 </html>
