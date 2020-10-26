@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  height: 50rem;
+  background-color: black;
+  font-family: monospace;
+  color: green;
+}
+
+#container {
+  height: 20rem;
+}
+
+button {
+  border-style: none;
+  font-family: monospace;
+  background-color: transparent;
+  border-width: 1px;
+  border-color: yellowgreen;
+  border-style: solid;
+  color: green;
+  outline: none;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+
+input[type="text"] {
+  width: 15rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid yellowgreen;
+  color: green;
+  font-size: 1rem;
+}
+
+::placeholder {
+  color: green;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.story-text {
+  width: 30rem;
+  margin: 10rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
