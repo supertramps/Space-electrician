@@ -10,18 +10,16 @@
   <body>
     <div id="container">
       <div class="flex center">
-        <div class="story-text">
+        <div class="text-box">
           <span>></span>
-          <p>
-            You wake up in what seems like storage room. You hear the buzzing
-            from an engine. You're certain that you are on some kind of ship.
-          </p>
+          <p id="story-text"></p>
           <input
             type="text"
             class="input-field"
             placeholder="What do you do?"
+            onsubmit="GetText()"
           />
-          <button id="submit-text">Enter</button>
+          <button id="submit-text" onclick="GetText()">Enter</button>
         </div>
       </div>
     </div>
