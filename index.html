@@ -7,16 +7,18 @@
     <title>A text adventure</title>
     <script src="game.js"></script>
   </head>
-  <body>
-    
-    <!-- Game intro -->
-    <div id="intro" class="text-box">
-      <p>
-        Welcome. You play as an electrician working on spaceships in the future. Type start to begin your journey.
-      </p>
-    </div>
-    
-    <!-- Game start -->
+
+  <body class="flex center">
+    <div class="container">
+      <!-- Game intro -->
+      <div id="intro" class="text-box">
+        <p>
+          Welcome. You play as an electrician working on spaceships in the
+          future. Type start to begin your journey.
+        </p>
+      </div>
+
+      <!-- Game start -->
       <div id="game-start" class="text-box hidden">
         <p>
           You wake up in what seems like a storage room. You hear a faint
@@ -30,8 +32,8 @@
       <!-- User choose inspect -->
       <div id="inspect" class="text-box hidden">
         <p>
-          You walk up to the the locker and to your surprise it's open. You can't
-          really comprehend what you're looking at but it looks like an
+          You walk up to the the locker and to your surprise it's open. You
+          can't really comprehend what you're looking at but it looks like an
           assortment of weird hats and trash. There's one that catches your eye,
           it's a party hat. Much like the one you had on your 5th birthday.
         </p>
@@ -41,7 +43,10 @@
       <!-- User puts on hat -->
       <div id="use-hat" class="text-box hidden">
         <p>
-          You put the party hat on your head and for a brief moment it takes you back to your childhood. You wonder what happened with all that joy and wanderlust you had. After a minute you snap back into real life again and you understand that you have to leave this room.
+          You put the party hat on your head and for a brief moment it takes you
+          back to your childhood. You wonder what happened with all that joy and
+          wanderlust you had. After a minute you snap back into real life again
+          and you understand that you have to leave this room.
         </p>
         <p>Type leave to exit the room.</p>
       </div>
@@ -49,23 +54,38 @@
       <!-- User exit room -->
       <div id="exit-room" class="text-box hidden">
         <p>
-          When you exit the door you find yourself in a long corridor. You're now certain that you're on a spaceship. After 2 years in the field as an space electrician you should know. Your vision is not the greatest, it seems like the lights are out and the ship is running on backup power. On the wall you see a sign that shows your whereabouts. Left for cafeteria and right for electrical.
+          When you exit the door you find yourself in a long corridor. You're
+          now certain that you're on a spaceship. After 2 years in the field as
+          an space electrician you should know. Your vision is not the greatest,
+          it seems like the lights are out and the ship is running on backup
+          power. On the wall you see a sign that shows your whereabouts. Left
+          for cafeteria and right for electrical.
         </p>
         <p>Do you go left or right?</p>
       </div>
-      
+
       <!-- User leaves the room with hat-->
       <div id="leave-room-hat" class="text-box hidden">
         <p>
-          When you exit the door you find yourself in a long corridor. You're now certain that you're on a spaceship. After 2 years in the field as an space electrician you should know. Your vision is not the greatest, it seems like the lights are out and the ship is running on backup power. On the wall you see a sign that shows your whereabouts. Head east for cafeteria or west for electrical.
+          When you exit the door you find yourself in a long corridor. You're
+          now certain that you're on a spaceship. After 2 years in the field as
+          an space electrician you should know. Your vision is not the greatest,
+          it seems like the lights are out and the ship is running on backup
+          power. On the wall you see a sign that shows your whereabouts. Head
+          east for cafeteria or west for electrical.
         </p>
         <p>Do you go east or west?</p>
       </div>
-      
+
       <!-- User leaves the room without hat-->
       <div id="leave-room-no-hat" class="text-box hidden">
         <p>
-          When you exit the door you find yourself in a long corridor. You're now certain that you're on a spaceship. After 2 years in the field as an space electrician you should know. Your vision is not the greatest, it seems like the lights are out and the ship is running on backup power. On the wall you see a sign that shows your whereabouts. Left for cafeteria and right for electrical.
+          When you exit the door you find yourself in a long corridor. You're
+          now certain that you're on a spaceship. After 2 years in the field as
+          an space electrician you should know. Your vision is not the greatest,
+          it seems like the lights are out and the ship is running on backup
+          power. On the wall you see a sign that shows your whereabouts. Left
+          for cafeteria and right for electrical.
         </p>
         <p>Do you go to the cafeteria or electrical?</p>
       </div>
@@ -73,7 +93,12 @@
       <!-- User choose left -->
       <div id="left" class="text-box hidden">
         <p>
-          You take a left in the corridor and head for the cafeteria. Your stomach is aching, who knows how long you've been out. When you're just a few steps away from the cafeteria the doors slams violently. They can not be opened by force, and also let's face it, your second name never was muscle. You figure something must be done and you see it as your task to fix the wiring so you can get some food.
+          You take a left in the corridor and head for the cafeteria. Your
+          stomach is aching, who knows how long you've been out. When you're
+          just a few steps away from the cafeteria the doors slams violently.
+          They can not be opened by force, and also let's face it, your second
+          name never was muscle. You figure something must be done and you see
+          it as your task to fix the wiring so you can get some food.
         </p>
         <p>Go back.</p>
       </div>
@@ -81,12 +106,22 @@
       <!-- User choose right -->
       <div id="right" class="text-box hidden">
         <p>
-          You head for the electric room down the hall. The hallway is empty and you could hear a needle drop. Suddenly when you pass the medical ward you hear a rustle above you in the ventilation system, it freaks you out for a bit but you figure it's just a rat. <br> <br>
-          When you finally find the room you've been looking for you see that someone have been tampering with the wires to the system. They have been cut off. You try to reconnect the cables and as soon as you're about to connect the blue cable you notice that the ventilation shaft next to you bursts open and this... creature... emerges. It looks like your old crewmate but something's off, you realize one second too late that it must be an imposter. The last thing you feel is the tounge of the monster impaling you.
+          You head for the electric room down the hall. The hallway is empty and
+          you could hear a needle drop. Suddenly when you pass the medical ward
+          you hear a rustle above you in the ventilation system, it freaks you
+          out for a bit but you figure it's just a rat. <br />
+          <br />
+          When you finally find the room you've been looking for you see that
+          someone have been tampering with the wires to the system. They have
+          been cut off. You try to reconnect the cables and as soon as you're
+          about to connect the blue cable you notice that the ventilation shaft
+          next to you bursts open and this... creature... emerges. It looks like
+          your old crewmate but something's off, you realize one second too late
+          that it must be an imposter. The last thing you feel is the tounge of
+          the monster impaling you.
         </p>
         <p>You are dead. Type restart to try again.</p>
       </div>
-
 
       <div>
         <div class="text-box">
@@ -100,6 +135,8 @@
           <p id="error"></p>
         </div>
       </div>
-    </divclass=>
-  </body>
+    </div>
+  </div>
+  </div>
+</body>
 </html>

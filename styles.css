@@ -46,6 +46,7 @@ input[type="text"]:focus {
 .flex {
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
 }
 
 .center {
