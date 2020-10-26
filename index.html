@@ -8,7 +8,7 @@
   </head>
   <body>
     <!-- Intro text -->
-      <div id="intro" class="text-box hidden">
+      <div id="game-start" class="text-box">
         <p>
           You wake up in what seems like a storage room. You hear a faint
           buzzing from some sort of machine and you feel that you're definatily
@@ -23,10 +23,10 @@
         <p>
           You walk up to the the locker and to your surprise it's open. You can't
           really comprehend what you're looking at but it looks like an
-          assortment of weird hats and trash. There's one that caught your eye,
+          assortment of weird hats and trash. There's one that catches your eye,
           it's a party hat. Much like the one you had on your 5th birthday.
         </p>
-        <p>Do you equip the hat before you leave the room?</p>
+        <p>Do you put on the hat before you leave the room?</p>
       </div>
 
       <!-- User exit room -->
@@ -49,7 +49,7 @@
       <div id="right" class="text-box hidden">
         <p>
           You head for the electric room down the hall. The hallway is empty and you could hear a needle drop. Suddenly when you pass the medical ward you hear a rustle above you in the ventilation system, it freaks you out for a bit but you figure it's just a rat. <br> <br>
-          When you finally find the room you've been looking for you see that someone have been tampering with the wires to the system. They have been cut off. You try to reconnect the cables and as soon as you're about to connect the blue cable you notice that the ventilation shaft next to you bursts open and this... creature... emerges. The last thing you feel is the tounge of the monster impaling you.
+          When you finally find the room you've been looking for you see that someone have been tampering with the wires to the system. They have been cut off. You try to reconnect the cables and as soon as you're about to connect the blue cable you notice that the ventilation shaft next to you bursts open and this... creature... emerges. It looks like your old crewmate but something's off, you realize one second too late that it must be an imposter. The last thing you feel is the tounge of the monster impaling you.
         </p>
         <p>You are dead. Type restart to try again.</p>
       </div>
@@ -59,12 +59,13 @@
         <div class="text-box">
           <p id="story-text"></p>
           <input
-            id="text-input"
+            id="answer"
             type="text"
             class="input-field"
             placeholder="Type here..."
           />
-          <button onclick="FUNCTION HERE">Enter</button>
+          <button onclick="getAnswer()">Enter</button>
+          <p id="error"></p>
         </div>
       </div>
     </divclass=>
