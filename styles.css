@@ -7,6 +7,7 @@ body {
   color: green;
 }
 
+/* submit-button */
 button {
   border-style: none;
   font-family: monospace;
@@ -19,6 +20,7 @@ button {
   font-size: 1.5rem;
 }
 
+/* user input-field */
 input[type="text"] {
   width: 15rem;
   background-color: transparent;
@@ -42,6 +44,8 @@ input[type="text"]:focus {
   text-align: center;
   font-size: 1rem;
 }
+
+/* reusable classes */
 .flex {
   display: flex;
   flex-wrap: wrap;
