@@ -1,3 +1,4 @@
+// array containing user inputs
 let userInputs = [];
 
 /**
