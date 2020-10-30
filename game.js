@@ -46,6 +46,7 @@ function getAnswer() {
   } else if (input == "leave" && userInputs.includes("yes")) {
     document.getElementById("use-hat").classList.toggle("hidden");
     document.getElementById("leave-room-hat").classList.toggle("hidden");
+    userInputs.push(input);
   } else if (input == "exit" && userInputs.includes("start")) {
     document.getElementById("game-start").classList.toggle("hidden");
     document.getElementById("exit-room").classList.toggle("hidden");
@@ -70,10 +71,7 @@ function getAnswer() {
     document.getElementById("exit-room").classList.toggle("hidden");
     document.getElementById("left").classList.toggle("hidden");
     userInputs.push(input);
-  } else if (
-    input == "back" &&
-    userInputs.includes("exit" || "left" || "cafeteria" || "east")
-  ) {
+  } else if (input == "back" && userInputs.includes("leave" || "exit")) {
     document.getElementById("left").classList.toggle("hidden");
     document.getElementById("right").classList.toggle("hidden");
     userInputs.push(input);
@@ -81,10 +79,7 @@ function getAnswer() {
     document.getElementById("exit-room").classList.toggle("hidden");
     document.getElementById("right").classList.toggle("hidden");
     userInputs.push(input);
-  } else if (
-    input == "restart" &&
-    userInputs.includes("exit" || "electrical" || "right")
-  ) {
+  } else if (input == "restart") {
     document.getElementById("right").classList.toggle("hidden");
     document.getElementById("intro").classList.toggle("hidden");
   } else {
@@ -92,3 +87,5 @@ function getAnswer() {
       "You tried  " + input + "  but nothing happened.";
   }
 }
+
+// I would absolutely choose a different method to build this game today. This is way too hacky and almost depends on luck if it runs well. Glad I tried it though so I know in the future.

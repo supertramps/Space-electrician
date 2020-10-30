@@ -9,23 +9,26 @@ body {
 
 /* submit-button */
 button {
-  border-style: none;
   font-family: monospace;
-  background-color: transparent;
+  font-size: 1.5rem;
+  color: green;
+  border-style: none;
   border-width: 1px;
   border-color: yellowgreen;
   border-style: solid;
-  color: green;
   outline: none;
-  font-size: 1.5rem;
+
+  background-color: transparent;
 }
 
 /* user input-field */
 input[type="text"] {
   width: 15rem;
+
   background-color: transparent;
   border: none;
   border-bottom: 2px solid yellowgreen;
+
   color: green;
   font-size: 1rem;
 }
